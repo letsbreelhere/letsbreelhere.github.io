@@ -1,1 +1,88 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Bree Elle Gardner</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        justify-content: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        font-family: monospace, serif;
+      }
 
+      p {
+        font-size: 15px;
+        margin: 0;
+      }
+
+      .lavender {
+        color: #ACA1E6;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: none;
+      }
+
+      .container {
+        display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        flex-flow: column nowrap;
+        -webkit-flex-flow: column nowrap;
+        -moz-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+      }
+  
+      @media screen and (max-width: 425px) {
+        body {
+          justify-content: flex-start;
+          -webkit-justify-content: flex-start;
+          -moz-justify-content: flex-start;
+          -ms-justify-content: flex-start;
+        }
+        .container {
+          justify-content: flex-start;
+          -webkit-justify-content: flex-start;
+          -moz-justify-content: flex-start;
+          -ms-justify-content: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <div class="container">
+    <h1>Hi! I'm Bree Elle Gardner.</h1>
+    <h3>I <a class="lavender" href="github.com/letsbreelhere">develop software</a> and study <a class="lavender" href="https://homotopytypetheory.org/book/">type theory</a>, mostly.</h3>
+    <p>I also help run a bi-weekly brunch</p>
+    <p>for the queer community in the East Bay.</p>
+    <h1>Contact Me</h1>
+    <h3>
+      <a class="lavender" href="mailto:me@bree.garden">email</a>
+      <a class="lavender" href="http://twitter.com/letsbreelhere">twitter</a>
+      <a class="lavender" href="https://www.linkedin.com/in/breeellegardner/">linkedin</a>
+    </h3>
+  </div>
+</html>
